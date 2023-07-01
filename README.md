@@ -95,7 +95,8 @@ node_modules
 ```
 NODE_ENV=development
 PORT=5000
-DATABASE_URL=mongodb://127.0.0.1:27017/
+DATABASE_URL=mongodb+srv://<username>:<password>@cluster0.cai2g.mongodb.net/?retryWrites=true&w=majority
+
 ```
 
 #### create a app.ts file in src folder
