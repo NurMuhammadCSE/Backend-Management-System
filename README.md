@@ -99,6 +99,22 @@ DATABASE_URL=mongodb+srv://<username>:<password>@cluster0.cai2g.mongodb.net/?ret
 
 ```
 
+#### Added Package.json
+```json
+  "scripts": {
+    "start": "ts-node-dev --respawn --transpile-only src/server.ts",
+    "lint:check": "eslint --ignore-path .eslintignore --ext .js,.ts .",
+    "lint:fix": "eslint . --fix",
+    "prettier:check": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
+    "prettier:fix": "prettier --write .",
+    "lint-prettier": "yarn lint:check && yarn prettier:check",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "lint-staged": {
+    "src/**/*.ts": "yarn lint-prettier"
+  },
+```
+
 #### create a app.ts file in src folder
 ```ts
 import cors from 'cors';
