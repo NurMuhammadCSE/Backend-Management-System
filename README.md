@@ -445,8 +445,8 @@ export type IGenericErrorMessage = {
   message: string;
 };
 ```
-Then create a common.ts
-```
+#### Then create a common.ts
+```ts
 import { IGenericErrorMessage } from './error';
 
 export type IGenericErrorResponse = {
