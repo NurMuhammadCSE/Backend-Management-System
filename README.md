@@ -11,7 +11,7 @@
 tsc --init
 ```
 
-#### add <b> tsconfig.json </b>
+#### add tsconfig.json
 ```json
 "rootDir": "./src",
 "outDir": "./dist",
